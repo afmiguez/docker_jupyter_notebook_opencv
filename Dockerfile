@@ -1,5 +1,5 @@
 #This is a comment
-FROM ubuntu:16.04
+FROM ubuntu:14.04
 MAINTAINER Alessandro Miguez <afmiguez@gmail.com>
 RUN apt-get update && apt-get install -y wget
 RUN wget https://repo.continuum.io/archive/Anaconda2-4.2.0-Linux-x86_64.sh
