@@ -4,8 +4,8 @@ MAINTAINER Alessandro Miguez <afmiguez@gmail.com>
 RUN apt-get update && apt-get install -y wget
 RUN wget https://repo.continuum.io/archive/Anaconda2-4.2.0-Linux-x86_64.sh
 RUN bash Anaconda2-4.2.0-Linux-x86_64.sh -b -p $HOME/anaconda
-#RUN mkdir /home/images
-#ADD [^.]* /home/images/
+RUN mkdir /home/images
+ADD [^.]* /home/images/
 
 ENV PATH="/root/anaconda/bin:${PATH}"
 
